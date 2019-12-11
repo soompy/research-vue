@@ -15,9 +15,9 @@
               <div class="price">$25</div>
               <div class="type">
                 <p class="color">color</p>
-                <span>R</span>
-                <span>B</span>
-                <span>Y</span>
+                <span id="gray" class="gray">gray</span>
+                <span id="red" class="red">red</span>
+                <span id="purple" class="purple">purple</span>
               </div>
               <button class="cart_btn">Add to Cart</button>
             </div>
@@ -35,9 +35,9 @@
               <div class="price">$5.00 - $35.99</div>
               <div class="type">
                 <p class="color">color</p>
-                <span>R</span>
-                <span>B</span>
-                <span>Y</span>
+                <span id="pink" class="pink">pink</span>
+                <span id="yellow" class="yellow">yellow</span>
+                <span id="green" class="green">green</span>
               </div>
               <button class="cart_btn">Add to Cart</button>
             </div>
@@ -55,9 +55,9 @@
               <div class="price">$46</div>
               <div class="type">
                 <p class="color">color</p>
-                <span>R</span>
-                <span>B</span>
-                <span>Y</span>
+                <span id="gold" class="gold">gold</span>
+                <span id="blue" class="blue">blue</span>
+                <span id="white" class="white">white</span>
               </div>
               <button class="cart_btn">Add to Cart</button>
             </div>
@@ -75,9 +75,9 @@
               <div class="price">$99</div>
               <div class="type">
                 <p class="color">color</p>
-                <span>R</span>
-                <span>B</span>
-                <span>Y</span>
+                <span id="origin" class="origin">origin</span>
+                <span id="skyblue" class="skyblue">skyblue</span>
+                <span id="black" class="black">black</span>
               </div>
               <button class="cart_btn">Add to Cart</button>
             </div>
@@ -135,13 +135,78 @@
     width: 30px;
     height: 30px;
     border: 1px solid #eeeeee;
+    box-shadow: 1px 1px 1px 2px #eee;
     margin: 0 6px 0 0;
     border-radius: 50%;
+    text-indent: -9999px;
+    overflow: hidden;
   }
 
   .cart_btn {
     margin-top: 20px;
+    padding: 8px 10px;
+    border: 1px solid #f4793e;
+    background: #fff;
+    color: #f4793e;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
   }
+
+  .cart_btn:hover {
+    background: #f4793e;
+    color: #fff;
+  }
+
+  .gray {
+    background: #333;
+  }
+
+  .red {
+    background: red;
+  }
+
+  .purple {
+    background: purple;
+  }
+
+  .pink {
+    background: pink;
+  }
+
+  .yellow {
+    background: yellow;
+  }
+
+  .green {
+    background: green;
+  }
+
+  .gold {
+    background: gold;
+  }
+
+  .blue {
+    background: blue;
+  }
+
+  .white {
+    background: white;
+  }
+
+  .origin {
+    background: #bc001a;
+  }
+
+  .skyblue {
+    background: skyblue;
+  }
+
+  .black {
+    background: black;
+  }
+
+
 </style>
 
 <script>
